@@ -23,7 +23,7 @@ class Biblioteca:
         return self._libros[libro]
 
     def test(self):
-	pass    
+	print("TEST")   
 
 
     def existe_autor(self, autor):
