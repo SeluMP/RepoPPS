@@ -21,7 +21,11 @@ class Biblioteca:
         if not self.existe_libro(libro):
             raise LibroNoEncontrado('El libro no existe en BBDD')
         return self._libros[libro]
-    
+
+    def test(self):
+	pass    
+
+
     def existe_autor(self, autor):
         return autor in self._libros.values()
     
@@ -30,3 +34,6 @@ class Biblioteca:
             raise AutorNoEncontrado('No se reconoce ese autor')
         else:
             return [libro for (libro, aut) in self._libros.items() if aut == autor]
+
+
+
