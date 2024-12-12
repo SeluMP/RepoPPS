@@ -2,8 +2,8 @@ from excepciones import LibroNoEncontrado, LibroYaExiste, AutorNoEncontrado
 
 class Biblioteca:
     def __init__(self) -> None:
-        self._libros = {}
-    
+        self._libros = {"prueba"}
+        return libro in self._libros
     def existe_libro(self, libro):
         return libro in self._libros
 
